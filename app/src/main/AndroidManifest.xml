@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.TheBloomRoomFlower.bloomroom"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TheBloomRoomFlower"
+        tools:targetApi="31" >
+        <activity
+            android:name="com.TheBloomRoomFlower.bloomroom.AdminviewodersActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.TheBloomRoomFlower.bloomroom.AddcatadminActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.TheBloomRoomFlower.bloomroom.AddfloweradminActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.TheBloomRoomFlower.bloomroom.CmviewoderActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.TheBloomRoomFlower.bloomroom.CmcatoderActivity"
+            android:exported="false">
+
+            </activity>
+        <activity
+            android:name="com.TheBloomRoomFlower.bloomroom.AdminActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.TheBloomRoomFlower.bloomroom.CmActivity"
+            android:exported="false" >
+            </activity>
+        <activity
+            android:name="com.TheBloomRoomFlower.bloomroom.CmcusoderActivity"
+            android:exported="false">
+
+
+        </activity>
+
+
+        <activity
+            android:name="com.TheBloomRoomFlower.bloomroom.RegistrationActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.TheBloomRoomFlower.bloomroom.MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wllppr14"
+    tools:context="com.TheBloomRoomFlower.bloomroom.MainActivity">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="402dp"
+        android:layout_height="73dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="261dp"
+        android:layout_marginEnd="4dp"
+        android:foregroundTint="#8BC34A"
+        android:text="     Let`s Oder Your Flowers"
+        android:textColor="#9C27B0"
+        android:textColorHint="#090909"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="228dp"
+        android:layout_height="160dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="94dp"
+        app:srcCompat="@drawable/logo1" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_margin="40dp"
+        android:layout_centerInParent="true">
+
+        <!-- Table Heading -->
+
+        <TableRow
+            android:background="@color/material_dynamic_neutral80"
+            android:id="@+id/table_row_layout">
+
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="196dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="Flower Name"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="Price"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+        <!-- Table Data -->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow/>
+        <TableRow/>
+
+    </TableLayout>
+
+    <!-- Text Fields -->
+
+    <!-- Submit Button -->
+
+    <EditText
+        android:id="@+id/CartUname"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tableLayout"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="18dp"
+        android:hint=" Enter your User name" />
+
+    <EditText
+        android:id="@+id/CartCat"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CartUname"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="34dp"
+        android:hint="Enter the Flower you want" />
+
+    <EditText
+        android:id="@+id/CartQuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CartCat"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Enter the Quantity you want" />
+
+    <Button
+        android:id="@+id/addtocrt"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="55dp"
+        android:text="Add to Cart" />
+
+</RelativeLayout>

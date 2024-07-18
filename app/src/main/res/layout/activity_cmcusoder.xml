@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wllppr14"
+    tools:context="com.TheBloomRoomFlower.bloomroom.MainActivity">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="402dp"
+        android:layout_height="73dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="224dp"
+        android:layout_marginEnd="4dp"
+        android:text="        Here our Categories"
+        android:textColor="#9C27B0"
+        android:textColorHint="#090909"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="222dp"
+        android:layout_height="148dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="67dp"
+        app:srcCompat="@drawable/logo1" />
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView11"
+        android:layout_alignStart="@+id/textView11"
+        android:layout_marginStart="-5dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="40dp">
+
+        <!-- Table Heading -->
+
+        <TableRow
+            android:layout_width="351dp"
+            android:background="@color/material_dynamic_neutral80">
+
+            <TextView
+                android:layout_width="142dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="5sp"
+                android:paddingStart="5sp"
+                android:paddingEnd="5sp"
+                android:text="Category "
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="Including"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="Price"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <!-- Table Data -->
+
+        <TableRow android:padding="2dp" />
+
+        <TableRow />
+
+        <TableRow />
+    </TableLayout>
+
+    <!-- Text Fields -->
+
+    <!-- Submit Button -->
+
+    <EditText
+        android:id="@+id/enterUserName"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tableLayout1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="18dp"
+        android:hint="Enter your User name" />
+
+    <EditText
+        android:id="@+id/enterTheFlower"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enterUserName"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="34dp"
+        android:hint="Enter the Category" />
+
+    <EditText
+        android:id="@+id/enterTheQunt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enterTheFlower"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Enter the Quantity you want" />
+
+    <Button
+        android:id="@+id/onClickAddToCart"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enterTheQunt"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="5dp"
+        android:text="Add to Cart" />
+
+</RelativeLayout>
